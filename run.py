@@ -16,8 +16,8 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.cleanup()
 
-# read data using pin 14
-
+# read data using GPIO 14 , PIN = 08
+# led signal using GPIO 17, PIN = 11
 instance = dht11.DHT11(pin=14)
 GPIO.setup(17, GPIO.OUT)
 
